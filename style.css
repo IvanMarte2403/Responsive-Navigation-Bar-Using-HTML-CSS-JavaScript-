@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --header-height: 3.5rem;
+
+    /* =================Colores============= */
+    --first-color: hsl(220, 68%, 54%);
+    --first-color-lighten: hsl(220, 68%, 97%);
+    --title-color: hsl(220, 12%, 45%);
+    --text-color: hsl(220, 12%, 45%);
+    --body-color: hsl(220, 100%, 99%);
+
+
+    /* Font and Typography */
+
+    --body-font: "Poppins", sans-serif;
+    --normal-font-size: .928rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+
+    /* ==============Font Weight=============== */
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ================Z index ================ */
+    --z-tool-tip: 10; 
+    --z-fixed: 100; 
+    }
+    /* ==========Responsive Typography========= */
+
+    @media screen and (min-width: 1024px){
+        :root{
+            --normal-font-size: 1rem;
+            --small-font-size: .875rem;
+            --smaller-font-size: .813rem;
+        }
+    }
+
+
+    /* ==============BASE========= */
+    *{
+        box-sizing: border-box; 
+        padding: 0;
+        margin: 0;
+
+    }
+
+    body{
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--body-color);
+        color: var(--text-color);
+    }
+
+
+    .ulNavHangar{
+        list-style: none;
+
+    }
+
+    .aNavHangar{
+        text-decoration: none;
+    }
+
+
+    /* ==============Reusable CSS Classes========== */
+
+    .containerNavHangar{
+        max-width: 1120px;
+        margin-inline: 1.5rem;
+    }
